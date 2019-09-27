@@ -12,81 +12,81 @@ local Keys = {
 
 
 -- WAIT (F1)
-Citizen.CreateThread(function()	
-    local wait = "anim@heists@heist_corona@single_team"
+-- Citizen.CreateThread(function()	
+--     local wait = "anim@heists@heist_corona@single_team"
 		
-	RequestAnimDict(wait)
-	while not HasAnimDictLoaded(wait) do
-		Citizen.Wait(100)
-	end		
+-- 	RequestAnimDict(wait)
+-- 	while not HasAnimDictLoaded(wait) do
+-- 		Citizen.Wait(100)
+-- 	end		
 	
-	local waitt = false
-	while true do
-		Citizen.Wait(0)
+-- 	local waitt = false
+-- 	while true do
+-- 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0, Keys['F1']) then
-		if not waitt then
-                TaskPlayAnim(GetPlayerPed(-1), wait, "single_team_loop_boss", 8.0, 8.0, -1, 50, 0, false, false, false)
-                waitt = true
-            else
-                waitt = false
-                ClearPedTasks(GetPlayerPed(-1))
-            end
-        end
-    end
-end)		
+-- 		if IsControlJustPressed(0, Keys['F1']) then
+-- 		if not waitt then
+--                 TaskPlayAnim(GetPlayerPed(-1), wait, "single_team_loop_boss", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 waitt = true
+--             else
+--                 waitt = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)		
 
 -- WAIT2 (F2)
-Citizen.CreateThread(function()	
-    local wait2 = "mini@strip_club@idles@bouncer@base"
+-- Citizen.CreateThread(function()	
+--     local wait2 = "mini@strip_club@idles@bouncer@base"
 		
-	RequestAnimDict(wait2)
-	while not HasAnimDictLoaded(wait2) do
-		Citizen.Wait(100)
-	end		
+-- 	RequestAnimDict(wait2)
+-- 	while not HasAnimDictLoaded(wait2) do
+-- 		Citizen.Wait(100)
+-- 	end		
 	
-	local waitt2 = false
-	while true do
-		Citizen.Wait(0)
+-- 	local waitt2 = false
+-- 	while true do
+-- 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0, Keys['F2']) then
-		if not waitt2 then
-                TaskPlayAnim(GetPlayerPed(-1), wait2, "base", 8.0, 8.0, -1, 50, 0, false, false, false)
-                waitt2 = true
-            else
-                waitt2 = false
-                ClearPedTasks(GetPlayerPed(-1))
-            end
-        end
-    end
-end)	
+-- 		if IsControlJustPressed(0, Keys['F2']) then
+-- 		if not waitt2 then
+--                 TaskPlayAnim(GetPlayerPed(-1), wait2, "base", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 waitt2 = true
+--             else
+--                 waitt2 = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)	
 
 
 --fucku (f3)
 		
-Citizen.CreateThread(function()	
-    local fuck2 = "anim@mp_player_intupperfinger"
+-- Citizen.CreateThread(function()	
+--     local fuck2 = "anim@mp_player_intupperfinger"
 		
-	RequestAnimDict(fuck2)
-	while not HasAnimDictLoaded(fuck2) do
-		Citizen.Wait(100)
-	end		
+-- 	RequestAnimDict(fuck2)
+-- 	while not HasAnimDictLoaded(fuck2) do
+-- 		Citizen.Wait(100)
+-- 	end		
 	
-	local fuckk2 = false
-	while true do
-		Citizen.Wait(0)
+-- 	local fuckk2 = false
+-- 	while true do
+-- 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0, Keys['F3']) then
-		if not fuckk2 then
-                TaskPlayAnim(GetPlayerPed(-1), fuck2, "idle_a_fp", 8.0, 8.0, -1, 50, 0, false, false, false)
-                fuckk2 = true
-            else
-                fuckk2 = false
-                ClearPedTasks(GetPlayerPed(-1))
-            end
-        end
-    end
-end)
+-- 		if IsControlJustPressed(0, Keys['F3']) then
+-- 		if not fuckk2 then
+--                 TaskPlayAnim(GetPlayerPed(-1), fuck2, "idle_a_fp", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 fuckk2 = true
+--             else
+--                 fuckk2 = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)
 
 
 --HANDS ON THE HEAD (F5)
@@ -103,7 +103,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0, Keys['F5']) then
+		if IsControlJustPressed(0, Keys['X']) then
 		if not headd2 then
                 TaskPlayAnim(GetPlayerPed(-1), head2, "idle_a", 8.0, 8.0, -1, 50, 0, false, false, false)
                 headd2 = true
@@ -142,110 +142,136 @@ Citizen.CreateThread(function()
     end
 end)
 
---WHISTLE (ARROW DOWN)
+--main sur le holster (maj)
 
 Citizen.CreateThread(function()	
-    local whistle2 = "rcmnigel1c"
+    local good2 = "reaction@intimidation@cop@unarmed"
 		
-	RequestAnimDict(whistle2)
-	while not HasAnimDictLoaded(whistle2) do
+	RequestAnimDict(good2)
+	while not HasAnimDictLoaded(good2) do
 		Citizen.Wait(100)
 	end		
 	
-	local whistlee2 = false
+	local goood2 = false
 	while true do
 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0,112) then
-		if not whistlee2 then
-                TaskPlayAnim(GetPlayerPed(-1), whistle2, "hailing_whistle_waive_a", 8.0, 8.0, -1, 50, 0, false, false, false)
-                whistlee2 = true
+		if IsControlJustPressed(0, Keys['CAPS']) then
+		if not goood2 then
+                TaskPlayAnim(GetPlayerPed(-1), good2, "intro", 8.0, 8.0, -1, 50, 0, false, false, false)
+                goood2 = true
             else
-                whistlee2 = false
+                goood2 = false
                 ClearPedTasks(GetPlayerPed(-1))
             end
         end
     end
 end)
 
---YESS (ARROW LEFT)
+-- --WHISTLE (ARROW DOWN)
 
-Citizen.CreateThread(function()	
-    local jewel2 = "anim@mp_player_intupperthumbs_up"
+-- Citizen.CreateThread(function()	
+--     local whistle2 = "rcmnigel1c"
 		
-	RequestAnimDict(jewel2)
-	while not HasAnimDictLoaded(jewel2) do
-		Citizen.Wait(100)
-	end		
+-- 	RequestAnimDict(whistle2)
+-- 	while not HasAnimDictLoaded(whistle2) do
+-- 		Citizen.Wait(100)
+-- 	end		
 	
-	local jewell2 = false
-	while true do
-		Citizen.Wait(0)
+-- 	local whistlee2 = false
+-- 	while true do
+-- 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0,108) then
-		if not jewell2 then
-                TaskPlayAnim(GetPlayerPed(-1), jewel2, "enter", 8.0, 8.0, -1, 50, 0, false, false, false)
-                jewell2 = true
-            else
-                jewell2 = false
-                ClearPedTasks(GetPlayerPed(-1))
-            end
-        end
-    end
-end)
+-- 		if IsControlJustPressed(0,112) then
+-- 		if not whistlee2 then
+--                 TaskPlayAnim(GetPlayerPed(-1), whistle2, "hailing_whistle_waive_a", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 whistlee2 = true
+--             else
+--                 whistlee2 = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)
 
+-- --YESS (ARROW LEFT)
 
---FACEPALM (RIGHT)
-Citizen.CreateThread(function()	
-    local facepalm2 = "anim@mp_player_intcelebrationmale@face_palm"
+-- Citizen.CreateThread(function()	
+--     local jewel2 = "anim@mp_player_intupperthumbs_up"
 		
-	RequestAnimDict(facepalm2)
-	while not HasAnimDictLoaded(facepalm2) do
-		Citizen.Wait(100)
-	end		
+-- 	RequestAnimDict(jewel2)
+-- 	while not HasAnimDictLoaded(jewel2) do
+-- 		Citizen.Wait(100)
+-- 	end		
 	
-	local facepalml2 = false
-	while true do
-		Citizen.Wait(0)
+-- 	local jewell2 = false
+-- 	while true do
+-- 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0,107) then
-		if not facepalml2 then
-                TaskPlayAnim(GetPlayerPed(-1), facepalm2, "face_palm", 8.0, 8.0, -1, 50, 0, false, false, false)
-                facepalml2 = true
-            else
-                facepalml2 = false
-                ClearPedTasks(GetPlayerPed(-1))
-            end
-        end
-    end
-end)
+-- 		if IsControlJustPressed(0,108) then
+-- 		if not jewell2 then
+--                 TaskPlayAnim(GetPlayerPed(-1), jewel2, "enter", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 jewell2 = true
+--             else
+--                 jewell2 = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)
 
 
-
---HELLO (ARROW UP)
-Citizen.CreateThread(function()	
-    local helloh2 = "anim@mp_player_intcelebrationmale@salute"
+-- --FACEPALM (RIGHT)
+-- Citizen.CreateThread(function()	
+--     local facepalm2 = "anim@mp_player_intcelebrationmale@face_palm"
 		
-	RequestAnimDict(helloh2)
-	while not HasAnimDictLoaded(helloh2) do
-		Citizen.Wait(100)
-	end		
+-- 	RequestAnimDict(facepalm2)
+-- 	while not HasAnimDictLoaded(facepalm2) do
+-- 		Citizen.Wait(100)
+-- 	end		
 	
-	local hellohl2 = false
-	while true do
-		Citizen.Wait(0)
+-- 	local facepalml2 = false
+-- 	while true do
+-- 		Citizen.Wait(0)
 		
-		if IsControlJustPressed(0,111) then
-		if not hellohl2 then
-                TaskPlayAnim(GetPlayerPed(-1), helloh2, "salute", 8.0, 8.0, -1, 50, 0, false, false, false)
-                hellohl2 = true
-            else
-                hellohl2 = false
-                ClearPedTasks(GetPlayerPed(-1))
-            end
-        end
-    end
-end)
+-- 		if IsControlJustPressed(0,107) then
+-- 		if not facepalml2 then
+--                 TaskPlayAnim(GetPlayerPed(-1), facepalm2, "face_palm", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 facepalml2 = true
+--             else
+--                 facepalml2 = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)
+
+
+
+-- --HELLO (ARROW UP)
+-- Citizen.CreateThread(function()	
+--     local helloh2 = "anim@mp_player_intcelebrationmale@salute"
+		
+-- 	RequestAnimDict(helloh2)
+-- 	while not HasAnimDictLoaded(helloh2) do
+-- 		Citizen.Wait(100)
+-- 	end		
+	
+-- 	local hellohl2 = false
+-- 	while true do
+-- 		Citizen.Wait(0)
+		
+-- 		if IsControlJustPressed(0,111) then
+-- 		if not hellohl2 then
+--                 TaskPlayAnim(GetPlayerPed(-1), helloh2, "salute", 8.0, 8.0, -1, 50, 0, false, false, false)
+--                 hellohl2 = true
+--             else
+--                 hellohl2 = false
+--                 ClearPedTasks(GetPlayerPed(-1))
+--             end
+--         end
+--     end
+-- end)
 
 
 		
